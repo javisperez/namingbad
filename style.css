@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'heart_breaking_badregular';
+    src: url('heart_breaking_bad-webfont.eot');
+    src: url('heart_breaking_bad-webfont.eot?#iefix') format('embedded-opentype'),
+        url('heart_breaking_bad-webfont.woff') format('woff'),
+        url('heart_breaking_bad-webfont.ttf') format('truetype'),
+        url('heart_breaking_bad-webfont.svg#heart_breaking_badregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    background: url(bg.jpg) fixed no-repeat top center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+#result {
+    display: block;
+    margin: 0 auto;
+}
+
+canvas {
+    margin-top: 40px;
+    display: none;
+}
+
+#sizer {
+    position: absolute;
+    visibility: hidden;
+    height: auto;
+    width: auto;
+    font-family: 'heart_breaking_badregular';
+    font-weight: 700;
+    font-size: 120px;
+}
+.user-input {
+    padding: 20px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+#name {
+    padding: 10px;
+    font-size: 48px;
+    width: 780px;
+    background: rgba(255,255,255,.4);
+    border: none;
+    border-bottom: 4px solid #FFF;
+    color: #444;
+    outline: none;
+}
+
+#go {
+    background: transparent url('right-arrow-icon.png') no-repeat 0px 6px;
+    color: #000;
+    font-size: 38px;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    outline: none;
+    height: 80px;
+    width: 70px;
+    padding: 0;
+    cursor: pointer;
+}
+
+#final-result {
+    background: rgba(0, 0, 0, 0.9);
+    /* margin-top: 100px; */
+    padding-top: 180px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: opacity .2s;
+    opacity: 0;    
+}
+
+.show {
+    opacity: 1 !important;
+}
+
+#logo {
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+}
+
+#close {
+    color: #eee;
+    font-family: Arial;
+    font-size: 42px;
+    position: absolute;
+    right: 50%;
+    cursor: pointer;
+    -webkit-transform: translate(390px, 0);
+    -moz-transform: translate(390px, 0);
+    -o-transform: translate(390px, 0);
+    -ms-transform: translate(390px, 0);
+    transform: translate(390px, 0);
+}
